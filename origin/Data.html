@@ -1,0 +1,106 @@
+
+<!-- saved from url=(0045)http://www.csie.ntnu.edu.tw/~u91029/Data.html -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./Data_files/style.css">
+<title>演算法筆記 - Data</title></head><body>
+<div class="a" id="1"><div class="h">
+<p class="b">Data</p>
+</div><div class="c">
+<p class="t">Data</p>
+<p>英文的「 Data 」是複數形，是指大量資料，而非一筆資料。</p>
+<p>中文的「資料」，大家國文造詣都很棒，應該都知道是什麼意思。不過為求慎重，還是查一下國語字典吧：</p>
+<pre>一、可供參考或研究的材料。如：「第一手資料」、「原始資料」。
+二、生產、生活中必需的東西。如：「生產資料」、「生活資料」。
+三、在社會科學中，指研究者對社會現象中某些事實所作的紀錄。
+四、計算機中一切數值、記號和事實的概稱。通常指未加以處理者。
+</pre>
+<p>聽起來有點複雜，就當我沒查吧。</p>
+<p>簡單來說，計算機拿來儲存、拿來計算的東西，就叫做資料。</p>
+<p class="t">程式語言的變數</p>
+<p>「資料」聽起來不明不白，有點抽象。對於初學者來說，從程式語言的變數入手，會比較有感覺。</p>
+<div class="sh"><div class="bar">&nbsp;</div><ol><li><span class="comment">//&nbsp;一個整數，它是一筆資料。</span></li><li><span class="type">int</span><span>&nbsp;</span><span class="word">i</span><span>&nbsp;=&nbsp;</span><span class="value">0</span><span>;</span></li><li>&nbsp;</li><li><span class="comment">//&nbsp;一個字串，它是一筆資料。</span></li><li><span class="type">char</span><span>*&nbsp;</span><span class="word">s</span><span>[</span><span class="value">10</span><span>]&nbsp;=&nbsp;</span><span class="string">"Hello&nbsp;World!"</span><span>;</span></li><li>&nbsp;</li><li><span class="comment">//&nbsp;一個boolean，它是一筆資料。</span></li><li><span class="type">bool</span><span>&nbsp;</span><span class="word">b</span><span>&nbsp;=&nbsp;</span><span class="keyword">false</span><span>;</span></li><li>&nbsp;</li><li><span class="comment">//&nbsp;一個座標，它是一筆資料。</span></li><li><span class="keyword">struct</span><span>&nbsp;</span><span class="word">Point</span><span>&nbsp;{</span><span class="type">int</span><span>&nbsp;</span><span class="word">x</span><span>,&nbsp;</span><span class="word">y</span><span>;}&nbsp;</span><span class="word">point</span><span>&nbsp;=&nbsp;{</span><span class="value">2</span><span>,&nbsp;</span><span class="value">3</span><span>};</span></li><li>&nbsp;</li><li><span class="comment">//&nbsp;一顆從別處偷借來的球，它是一筆資料。</span></li><li><span class="keyword">class</span><span>&nbsp;</span><span class="word">Ball</span></li><li><span>{</span></li><li><span class="keyword">public</span><span>:</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">Ball</span><span>();</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">Ball</span><span>(</span><span class="type">double</span><span>,&nbsp;</span><span class="keyword">const</span><span>&nbsp;</span><span class="type">char</span><span>*);</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">Ball</span><span>(</span><span class="type">double</span><span>,&nbsp;</span><span class="word">string</span><span>&amp;);</span></li><li>&nbsp;</li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="type">double</span><span>&nbsp;</span><span class="word">radius</span><span>();</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">string</span><span>&amp;&nbsp;</span><span class="word">name</span><span>();</span></li><li>&nbsp;</li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">void</span><span>&nbsp;</span><span class="word">radius</span><span>(</span><span class="type">double</span><span>);</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">void</span><span>&nbsp;</span><span class="word">name</span><span>(</span><span class="keyword">const</span><span>&nbsp;</span><span class="type">char</span><span>*);</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">void</span><span>&nbsp;</span><span class="word">name</span><span>(</span><span class="word">string</span><span>&amp;);</span></li><li>&nbsp;</li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="type">double</span><span>&nbsp;</span><span class="word">volumn</span><span>();</span></li><li>&nbsp;</li><li><span class="keyword">private</span><span>:</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="type">double</span><span>&nbsp;</span><span class="word">_radius</span><span>;&nbsp;</span><span class="comment">//&nbsp;半徑</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">string</span><span>&nbsp;</span><span class="word">_name</span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;名稱</span></li><li><span>};</span></li><li>&nbsp;</li><li><span class="word">Ball</span><span>&nbsp;</span><span class="word">ball</span><span>;</span></li></ol></div>
+<p>上面這些都是一筆資料的 C++ 程式碼範例。可是如果有非常多筆資料怎麼辦呢？</p>
+<div class="sh"><div class="bar">&nbsp;</div><ol><li><span class="comment">//&nbsp;五筆資料</span></li><li><span class="type">int</span><span>&nbsp;</span><span class="word">i1</span><span>&nbsp;=&nbsp;</span><span class="value">1</span><span>,&nbsp;</span><span class="word">i2</span><span>&nbsp;=&nbsp;</span><span class="value">1</span><span>,&nbsp;</span><span class="word">i3</span><span>&nbsp;=&nbsp;</span><span class="value">1</span><span>,&nbsp;</span><span class="word">i4</span><span>&nbsp;=&nbsp;</span><span class="value">1</span><span>,&nbsp;</span><span class="word">i5</span><span>&nbsp;=&nbsp;</span><span class="value">1</span><span>;</span></li></ol></div>
+<p>可是如果有一萬筆、一億筆資料怎麼辦呢？</p>
+<p>是的，這時候你就必須學習「資料結構 Data Structure 」。要不然你會抓狂的。</p>
+<p>資料結構是資料的儲存方式。資料結構的用途，是讓我們計算資料的時候，可以簡便地、快速地存取資料。</p>
+<p>由於坊間已有許多圖文並茂的資料結構書籍，以下不再重複整理，僅做重點介紹。</p>
+
+</div></div><div class="a" id="2"><div class="h">
+<p class="b">大量 Data 資料結構 : <br> Array / List</p>
+</div><div class="c">
+<p class="t">Array</p>
+<img src="./Data_files/Data1.png">
+<p>繁中「陣列」，簡中「数组」。連續的記憶體。</p>
+<p>一個格子放入一筆資料，資料可以是一個數字、一個字元（所有字元合起來變成字串）、一個物件等等。</p>
+<p>搜尋、插入、刪除的時間複雜度都是 O(N) 。資料已排序，則支援二分搜尋。</p>
+<p class="e">UVa <a href="http://uva.onlinejudge.org/external/103/10370.html">10370</a> <a href="http://uva.onlinejudge.org/external/119/11991.html">11991</a> <a href="http://uva.onlinejudge.org/external/117/11716.html">11716</a></p>
+<p class="t">特殊的 Array</p>
+<img src="./Data_files/Data2.png">
+<p>根據資料數量，調整陣列大小，稱作 Dynamic Array 。每當陣列裝滿資料，就另外建立兩倍大的新陣列，將資料搬到新陣列，捨棄原陣列。搬移的總時間複雜度是 O(1 + 2 + 4 + 8 + ... + N) = O(2N - 1) = O(N) 。</p>
+<p>可以直接使用 STL 的 vector 。</p>
+<p class="t">List （ Linked List ）</p>
+<img src="./Data_files/Data3.png">
+<p>繁中「串列」，簡中「链表」。藉由指標得到下一塊記憶體。</p>
+<p>搜尋的時間複雜度是 O(N) 。知道正確位置，插入與刪除的時間複雜度是 O(1) ，否則必須先搜尋。無索引值，故不支援二分搜尋。</p>
+<p>可以直接使用 STL 的 list 。</p>
+<img src="./Data_files/Data4.png">
+<p>深究串列，其實串列是用陣列實作。一步一步釐清：</p>
+<p>上圖：藉由指標得到下一塊記憶體。</p>
+<p>中圖：指標是一個變數，儲存記憶體位址。</p>
+<p>下圖：電腦記憶體是一條很長的陣列，串列其實是散落在陣列裡面。另外還需要一個變數記錄串列的開頭，不過這邊沒畫上去。</p>
+<p class="t">特殊的 List</p>
+<img src="./Data_files/Data5.png">
+<p>尾串到頭，頭尾循環，稱作 Circular List 。特色是開頭可以隨便選、隨便動。</p>
+<img src="./Data_files/Data6.png">
+<p>只串單向，稱作 Singly Linked List 。雙向都串，稱作 Doubly Linked List ，特色是雙向都能搜尋。</p>
+<p>Doubly Linked List 若用 XOR 實作，稱作 XOR Linked List 。</p>
+<p>Doubly Linked List 若可以還原刪除動作，稱作 Dancing Links ，經常配合 Backtracking 一起使用。</p>
+<p class="e">UVa <a href="http://uva.onlinejudge.org/external/119/11988.html">11988</a> ICPC <a href="http://icpcarchive.ecs.baylor.edu/external/26/2659.pdf">2659</a></p>
+<p class="t">List 裡面放入 Array</p>
+<img src="./Data_files/Data7.png">
+<p>英文網路稱做 Unrolled Linked List ，中文網路稱作「鬆散鏈表」、「塊狀鏈表」。查無正式學術名稱。</p>
+<p>N 筆資料，分成 A 塊，每塊約 B = N/A 個元素。每塊各自記錄元素數量。</p>
+<p>索引：先數塊、再數元素，時間複雜度為 O(A) 。</p>
+<p>搜尋：全找，時間複雜度為 O(N) 。資料已排序，則為 O(A + logB) 。</p>
+<p>插入、刪除：一塊大於等於 2B 就拆開成兩塊，相鄰兩塊小於等於 B 就合併成一塊，避免一拆開就要合併、一合併就要拆開，時間複雜度為 O(A + 2B) 到 O(2A + B) 。</p>
+<p>N 筆資料，分成 A = sqrtN 塊，每塊約 B = sqrtN 個元素，是最均衡的，可令時間複雜度最低。索引、插入、刪除的時間複雜度為 O(sqrtN) 。競賽選手稱此技巧為 sqrt decomposition 。</p>
+<p>上古時代的文字編輯器曾使用此資料結構。</p>
+<p class="t">Array 裡面放入 List</p>
+<img src="./Data_files/Data8.png">
+<p>大致上就是圖論的 Adjacency Lists 。</p>
+<p>大致上就是之後提到的 Hash Table 。</p>
+
+</div></div><div class="a" id="3"><div class="h">
+<p class="b">大量 Data 資料結構 : <br> Queue / Stack</p>
+</div><div class="c">
+<p class="t">Queue</p>
+<img src="./Data_files/Data9.png">
+<p>繁中「佇列」，簡中「队列」。像排隊，維持資料前後順序。</p>
+<img src="./Data_files/Data10.png">
+<p>Array 和 List 皆可實作。</p>
+<p>插入、刪除需時 O(1) 。搜尋需時 O(N) 。</p>
+<p>佇列有暫留的性質。</p>
+<p>可以直接使用 STL 的 queue 。</p>
+<p class="e">UVa <a href="http://uva.onlinejudge.org/external/109/10935.html">10935</a> <a href="http://uva.onlinejudge.org/external/119/11995.html">11995</a> <a href="http://uva.onlinejudge.org/external/121/12100.html">12100</a> <a href="http://uva.onlinejudge.org/external/15/1598.html">1598</a></p>
+<p class="t">特殊的 Queue</p>
+<img src="./Data_files/Data11.png">
+<p>記憶體循環使用，稱作 Circular Queue 。</p>
+<img src="./Data_files/Data12.png">
+<p>資料保持排序，可以隨時得到最小（大）值，稱作 Priority Queue 。資料保持排序，可以隨時得到最小值、最大值，稱作 Double Ended Priority Queue 。</p>
+<p class="t">Stack</p>
+<img src="./Data_files/Data13.png">
+<p>繁中「堆疊」，簡中「栈」。像疊盤子，顛倒資料前後順序。</p>
+<img src="./Data_files/Data14.png">
+<p>Array 和 List 皆可實作。</p>
+<p>插入、刪除需時 O(1) 。搜尋需時 O(N) 。</p>
+<p>堆疊有反轉的性質、有括號對應的性質、有遞迴與疊代的性質。</p>
+<p>可以直接使用 STL 的 stack 。</p>
+<p class="e">UVa <a href="http://uva.onlinejudge.org/external/1/101.html">101</a> <a href="http://uva.onlinejudge.org/external/5/514.html">514</a> <a href="http://uva.onlinejudge.org/external/6/673.html">673</a> <a href="http://uva.onlinejudge.org/external/2/271.html">271</a> <a href="http://uva.onlinejudge.org/external/101/10152.html">10152</a></p>
+<p class="t">Deque （ Double Ended Queue ）</p>
+<img src="./Data_files/Data15.png">
+<p>兩頭皆能插入與刪除，稱作 Deque ，同時有著 Stack 和 Queue 的功效。</p>
+<img src="./Data_files/Data16.png">
+<p>Array 和 Doubly Linked List 皆可實作。</p>
+<p>可以直接使用 STL 的 deque 。</p>
+<p class="e">UVa <a href="http://uva.onlinejudge.org/external/122/12207.html">12207</a></p>
+</div></div><script src="./Data_files/h.js.下载"></script><div class="m" style="left: 0px;"><div class="li"><a href="http://www.csie.ntnu.edu.tw/~u91029/index.html">◀ Index</a></div><div class="li"><a href="http://www.csie.ntnu.edu.tw/~u91029/Data.html#1">Data</a></div><div class="li"><a href="http://www.csie.ntnu.edu.tw/~u91029/Data.html#2">大量Data資料結構:<br>Array / List</a></div><div class="li"><a href="http://www.csie.ntnu.edu.tw/~u91029/Data.html#3">大量Data資料結構:<br>Queue / Stack</a></div></div></body></html>
