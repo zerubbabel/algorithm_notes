@@ -1,0 +1,243 @@
+﻿body {
+font-size: 14pt;
+font-family: "微軟正黑體", "新細明體";
+color: #336699;
+background-color: #ECE9D8;
+text-align: center;
+margin: .5em 0 0 15em;
+padding: 0;
+}
+
+.en {
+font-family: "Palatino Linotype", "Times New Roman";
+font-size: .95em;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+color: #889A8A;
+text-decoration: underline;
+target: current none;
+}
+a:hover {color: brown;}
+
+.e a, .e a:link, .e a:visited, .e a:hover, .e a:active {
+color: inherit;
+target: new tab;
+}
+.e a:hover {color: red;}
+
+
+/* banner */
+.b {
+display: block;
+text-align: center;
+vertical-align: middle;
+text-indent: 0;
+color: #EEF7EF;
+background-color: #889A8A;
+border: 1px solid #444D45;
+-moz-border-radius-topleft: 64px;
+-moz-border-radius-topright: 64px;
+-moz-box-shadow: black 0px 0px 0px;
+width: 24.5em;
+height: auto;
+margin: 0 auto;
+padding: .75em 0 .75em 0;
+font-size: 20pt;
+font-weight: bold;
+}
+
+/* content */
+.c {
+display: block;
+overflow: hidden;
+text-align: left;
+line-height: 1.5em;
+color: black;
+background-color: #CCE8CF;
+border: 1px solid #444D45;
+border-top: 0;
+-moz-border-radius-bottomleft: 4px;
+-moz-border-radius-bottomright: 4px;
+-moz-box-shadow: black 0px 0px 0px;
+width: 35em;
+height: auto;
+margin-top: 0;
+margin-bottom: 2em;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* title */
+.t {
+text-indent: 0;
+text-align: left;
+color: #EEF7EF;
+background-color: #889A8A;
+border-top: 1px solid #444D45;
+border-bottom: 1px solid #444D45;
+width: auto;
+padding: 0 5em 0 5em;
+margin-left: 0;
+font-weight: bold;
+}
+
+/* paragraph */
+p {
+text-indent: 2em;
+width: 25em;
+margin-left: 5em;
+margin-right: auto;
+}
+
+/* block */
+pre {
+font-family: "Lucida Console", "Consolas"; 
+font-size: 11pt;
+font-weight: normal;
+line-height: 1.5em;
+text-indent: 0;
+color: black;
+border-top: 2px dotted #889A8A;
+border-bottom: 2px dotted #889A8A;
+width: 41em;
+padding: .5em 0 .5em 0;
+margin-left: 2em;
+margin-right: auto;
+word-wrap: break-word;
+}
+
+table pre {
+display: block;
+border: 0;
+margin: 0;
+text-align: center;
+width: auto;
+}
+
+/* exercise */
+.e {
+font-size: 11pt;
+font-weight: bold;
+text-indent: 0;
+text-align: center;
+line-height: 2em;
+word-spacing: .5em;
+letter-spacing: 2px;
+color: #FFFFFF;
+background-color: #509EE0;
+border: 1px solid #3B7FC8;
+-moz-border-radius: 8px;
+width: 31em;
+margin: .5em auto .5em 6.5em;
+padding: 0;
+word-wrap: break-word;
+}
+
+
+/* link */
+.l {
+font-size: 8pt;
+font-style: normal;
+font-weight: normal;
+target: new tab;
+}
+
+img, p img {
+display: block;
+text-indent: 0;
+text-align: center;
+margin: 0 auto;
+background-color: #ECE9D8;
+padding: 5px;
+}
+
+.m {
+display: block;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 1.5em;
+text-align: left;
+text-indent: 0;
+color: #EEF7EF;
+background-color: #889A8A;
+border: 1px solid #444D45;
+-moz-border-radius: 8px;
+-moz-box-shadow: #444D45 -8px 8px 12px;
+padding: .5em;
+width: 20em;
+min-width: 20em;
+max-width: 20em;
+overflow: hidden;
+position: fixed;
+left: 1em;
+top: 1em;
+z-index: 1;
+}
+
+.m .li {
+display: block;
+text-align: center;
+line-height: 1.5em;
+border-bottom: 1px dotted #CCE8CF;
+height: auto;
+margin: 0;
+padding: .25em 0 .25em 0;
+}
+
+.m .li:first-child {
+border-top: 1px dotted #CCE8CF;
+}
+
+.m a, .m a:link, .m a:visited, .m a:hover, .m a:active {
+text-decoration: none;
+color: #EEF7EF;
+}
+
+.sh {
+display: block;
+overflow: visible;
+font-family: "Lucida Console", "Courier New";
+font-size: 10pt;
+line-height: 1.5em;
+color: black;
+background-color: #CCE8CF;
+width: 40em;
+margin: .5em auto .5em 7em;
+word-wrap: break-word;
+}
+
+.sh .bar {
+font-weight: bold;
+color: #EEF7EF;
+background-color: #889A8A;
+border: 1px solid #889A8A;
+border-bottom: 1px dotted #CCE8CF;
+-moz-border-radius-topright: 16px;
+padding-left: 1em;
+}
+
+.sh ol {
+list-style: decimal outside !important;
+margin: 0 !important;
+border: 1px solid #889A8A;
+-moz-border-radius-bottomleft: 16px;
+}
+
+.sh ol li {
+background-color: #CCE8CF;
+border-top: 1px dotted #889A8A;
+}
+
+.sh ol li:first-child {
+border: 0;
+}
+
+.sh .comment, .sh .comments {color: #008200;}
+.sh .string, .sh .char {color: #069;}
+.sh .macro {color: purple;}
+.sh .type {color: #069;}
+.sh .keyword {color: blue;}
+.sh .word {}
+.sh .value, .sh .hex {color: brown;}

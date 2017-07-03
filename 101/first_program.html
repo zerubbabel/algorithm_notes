@@ -1,0 +1,158 @@
+
+<!-- saved from url=(0053)http://acm.nudt.edu.cn/~twcourse/EnumerateSearch.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./first_program_files/style.css" rel="stylesheet" type="text/css">
+<title>第一个程序</title><script type="text/javascript" src="./first_program_files/jquery-1.3.2.min.js.下载"></script><script type="text/javascript" src="./first_program_files/jquery-ui-1.7.2.custom.min.js.下载"></script><script type="text/javascript" src="./first_program_files/jquery.scrollTo-1.4.2-min.js.下载"></script><script type="text/javascript" src="./first_program_files/jquery.localscroll-1.2.7-min.js.下载"></script><script type="text/javascript">$(function(){$.localScroll();});</script><script type="text/javascript">$(function(){$(".m").draggable({ cursor:"move",distance:5,opacity:0.3});});</script></head><body>
+
+<p class="b" id="a1"><span class="en">你的第一个程序</span></p>
+<div class="c">
+<p>写程序其实并不难，下面就是你要写的第一个程序！</p>
+<p class="t">你的第一个程序</p>
+<textarea style="display: none;">
+begin 
+  writeln('hello world!');
+end.  
+</textarea>
+
+<p class="t">解释：你的第一个程序</p>
+	
+<textarea style="display: none;">
+begin //程序开始
+  writeln('hello world!');//屏幕显示hello world!
+end.  //程序结束
+</textarea>
+</div>
+
+
+
+<p class="b" id="a1"><span class="en">变量</span></p>
+<div class="c">
+<p>设置一个变量</p>
+<p class="t">你的第一个程序</p>
+<textarea style="display: none;">
+var a:integer;
+begin 
+  a=1;
+  writeln(a);
+end.  
+</textarea>
+
+<p class="t">变量</p>
+	
+<textarea style="display: none;">
+begin //程序开始
+  writeln('hello world!');//屏幕显示hello world!
+end.  //程序结束
+</textarea>
+</div>
+
+<div class="c">
+<p>写程序其实并不难，下面就是你要写的第一个程序！</p>
+<p class="t">你的第一个程序</p>
+<textarea style="display: none;">
+begin 
+  writeln('hello world!');
+end.  
+</textarea>
+
+<p class="t">解释：你的第一个程序</p>
+	
+<textarea style="display: none;">
+begin //程序开始
+  writeln('hello world!');//屏幕显示hello world!
+end.  //程序结束
+</textarea>
+</div>
+
+
+<p class="b" id="a3"><span class="en"> Search </span></p><div class="c">
+<p class="t"><span class="en"> Search </span></p>
+<p>「搜尋」。列出所有東西，瀏覽一遍，從中找出需要的部份。</p>
+<img src="./first_program_files/EnumerateSearch2.png">
+<p>實做程式時，可以一邊列出東西，一邊瀏覽，一邊判斷是不是想要的東西；也可以列出全部的東西之後，再進行瀏覽。一旦找到了、找完了所有想要的東西，搜尋就可以即刻停止。</p>
+<img src="./first_program_files/EnumerateSearch3.png">
+<p class="e"><span class="en"> UVa <a href="http://uva.onlinejudge.org/external/4/494.html">494</a> <a href="http://uva.onlinejudge.org/external/5/591.html">591</a> <a href="http://uva.onlinejudge.org/external/100/10038.html">10038</a> <a href="http://uva.onlinejudge.org/external/101/10141.html">10141</a> <a href="http://uva.onlinejudge.org/external/103/10370.html">10370</a> <a href="http://uva.onlinejudge.org/external/107/10783.html">10783</a> <a href="http://uva.onlinejudge.org/external/3/356.html">356</a> <a href="http://uva.onlinejudge.org/external/4/484.html">484</a> <a href="http://uva.onlinejudge.org/external/5/541.html">541</a> <a href="http://uva.onlinejudge.org/external/103/10340.html">10340</a> </span></p>
+<p class="t">舉例：找出數列裡的特定數字</p>
+<p>一邊瀏覽數列，一邊尋找特定數字，一旦找到了一個，就停止搜尋。</p>
+<div class="sh"><div class="bar">&nbsp;</div><ol><li><span class="type">int</span><span>&nbsp;</span><span class="word">array</span><span>[</span><span class="value">10</span><span>]&nbsp;=&nbsp;{</span><span class="value">4</span><span>,&nbsp;-</span><span class="value">2</span><span>,&nbsp;</span><span class="value">4</span><span>,&nbsp;</span><span class="value">100</span><span>,&nbsp;</span><span class="value">9</span><span>,&nbsp;-</span><span class="value">34</span><span>,&nbsp;</span><span class="value">17</span><span>,&nbsp;</span><span class="value">23</span><span>,&nbsp;</span><span class="value">55</span><span>};</span></li><li>&nbsp;</li><li><span class="type">bool</span><span>&nbsp;</span><span class="word">find_number</span><span>(</span><span class="type">int</span><span>&nbsp;</span><span class="word">n</span><span>)</span></li><li><span>{</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="type">bool</span><span>&nbsp;</span><span class="word">found</span><span>&nbsp;=&nbsp;</span><span class="keyword">false</span><span>;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for</span><span>&nbsp;(</span><span class="type">int</span><span>&nbsp;</span><span class="word">i</span><span>=</span><span class="value">0</span><span>;&nbsp;</span><span class="word">i</span><span>&lt;</span><span class="value">10</span><span>;&nbsp;</span><span class="word">i</span><span>++)&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;瀏覽數列</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>&nbsp;(</span><span class="word">array</span><span>[</span><span class="word">i</span><span>]&nbsp;==&nbsp;</span><span class="word">n</span><span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;判斷是不是想要的東西</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">found</span><span>&nbsp;=&nbsp;</span><span class="keyword">true</span><span>;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">break</span><span>;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></li><li>&nbsp;</li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;</span><span class="word">found</span><span>;</span></li><li><span>}</span></li><li>&nbsp;</li><li><span class="type">bool</span><span>&nbsp;</span><span class="word">find_number</span><span>(</span><span class="type">int</span><span>&nbsp;</span><span class="word">n</span><span>)</span></li><li><span>{</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for</span><span>&nbsp;(</span><span class="type">int</span><span>&nbsp;</span><span class="word">i</span><span>=</span><span class="value">0</span><span>;&nbsp;</span><span class="word">i</span><span>&lt;</span><span class="value">10</span><span>;&nbsp;</span><span class="word">i</span><span>++)&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;瀏覽數列</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>&nbsp;(</span><span class="word">array</span><span>[</span><span class="word">i</span><span>]&nbsp;==&nbsp;</span><span class="word">n</span><span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;判斷是不是想要的東西</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;</span><span class="keyword">true</span><span>;</span></li><li>&nbsp;</li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;</span><span class="keyword">false</span><span>;</span></li><li><span>}</span></li></ol></div><textarea style="display: none;">int array[10] = {4, -2, 4, 100, 9, -34, 17, 23, 55};
+
+bool find_number(int n)
+{
+	bool found = false;
+	for (int i=0; i&lt;10; i++)	// 瀏覽數列
+		if (array[i] == n)		// 判斷是不是想要的東西
+		{
+			found = true;
+			break;
+		}
+
+	return found;
+}
+
+bool find_number(int n)
+{
+	for (int i=0; i&lt;10; i++)	// 瀏覽數列
+		if (array[i] == n)		// 判斷是不是想要的東西
+			return true;
+
+	return false;
+}
+</textarea>
+<p class="t">舉例：找出數列裡的極大值</p>
+<p>一邊瀏覽數列，一邊比較數值大小，最後就求出了極大值。</p>
+<div class="sh"><div class="bar">&nbsp;</div><ol><li><span class="type">int</span><span>&nbsp;</span><span class="word">array</span><span>[</span><span class="value">10</span><span>]&nbsp;=&nbsp;{</span><span class="value">4</span><span>,&nbsp;-</span><span class="value">2</span><span>,&nbsp;</span><span class="value">4</span><span>,&nbsp;</span><span class="value">100</span><span>,&nbsp;</span><span class="value">9</span><span>,&nbsp;-</span><span class="value">34</span><span>,&nbsp;</span><span class="value">17</span><span>,&nbsp;</span><span class="value">23</span><span>,&nbsp;</span><span class="value">55</span><span>};</span></li><li>&nbsp;</li><li><span class="keyword">void</span><span>&nbsp;</span><span class="word">find_maximum</span><span>()</span></li><li><span>{</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="type">int</span><span>&nbsp;</span><span class="word">max</span><span>&nbsp;=&nbsp;-</span><span class="value">1e9</span><span>;</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for</span><span>&nbsp;(</span><span class="type">int</span><span>&nbsp;</span><span class="word">i</span><span>=</span><span class="value">0</span><span>;&nbsp;</span><span class="word">i</span><span>&lt;</span><span class="value">10</span><span>;&nbsp;</span><span class="word">i</span><span>++)&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;瀏覽數列</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>&nbsp;(</span><span class="word">array</span><span>[</span><span class="word">i</span><span>]&nbsp;&gt;&nbsp;</span><span class="word">max</span><span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;比較大小</span></li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">max</span><span>&nbsp;=&nbsp;</span><span class="word">array</span><span>[</span><span class="word">i</span><span>];</span></li><li>&nbsp;</li><li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="word">cout</span><span>&nbsp;&lt;&lt;&nbsp;</span><span class="string">"最大值是"</span><span>&nbsp;&lt;&lt;&nbsp;</span><span class="word">max</span><span>&nbsp;&lt;&lt;&nbsp;</span><span class="word">endl</span><span>;</span></li><li><span>}</span></li></ol></div><textarea style="display: none;">int array[10] = {4, -2, 4, 100, 9, -34, 17, 23, 55};
+
+void find_maximum()
+{
+	int max = -1e9;
+	for (int i=0; i&lt;10; i++)	// 瀏覽數列
+		if (array[i] &gt; max)		// 比較大小
+			max = array[i];
+
+	cout &lt;&lt; "最大值是" &lt;&lt; max &lt;&lt; endl;
+}
+</textarea>
+<p class="t">先整理再搜尋</p>
+<p>資料先整理過後，搜尋常常會變得簡單。我們可以先將資料依照大小順序排序，或者先將資料置入特別的資料結構當中，讓資料具有特性；然後運用該特性，設計特別的演算法，略過不相關的資料，快速判斷出想要找的資料。</p>
+<p>例如排序後使用<span class="en"> Binary Search </span>，又例如將資料置入<span class="en"> Hash Table </span>再搜尋等等。</p>
+
+</div><p class="b" id="a5"><span class="en"> Exhaustive Search </span></p><div class="c">
+<p class="t"><span class="en"> Exhaustive Search </span>（<span class="en"> Brute Force Search </span>）</p>
+<p>中文稱做「窮舉搜尋法」、「窮舉法」，俗稱「暴力搜尋法」、「暴力法」、「暴搜」，而教科書譯作「竭盡式搜尋法」、「蠻力搜尋法」。</p>
+<p>窮舉法是枚舉與搜尋兩種方法的結合，大意是：嘗試列舉全部情形、全部數據，一一比對檢查。窮舉法的特色是，所有情況無一遺漏。</p>
+<p>窮舉法充分利用了電腦能做快速運算的特性。窮舉對人類來說，是曠日費時的工作；對電腦來說，是駕輕就熟了。很多不容易計算出答案的問題，都可以用電腦做窮舉，而快速的找出正確答案。</p>
+<p>窮舉法可以用迴圈、遞迴等方式實作。</p>
+<p class="e"><span class="en"> UVa <a href="http://uva.onlinejudge.org/external/3/399.html">399</a> </span></p>
+<p class="t"><span class="en"> Brute Force Search v.s. Direct Method </span></p>
+<p><span class="en"> Brute Force Search </span>是一一檢驗所有可能的數據或解答，<span class="en"> Direct Method </span>是直接推導出解答。這兩者是完全不相同的。很多人常把這兩個名詞搞混，這裡做個釐清。</p>
+<p class="t">特殊的窮舉方式</p>
+<pre>Backtracking
+枚舉多維度數據。
+可看做是多維度的Exhaustive Search。
+
+Branch and Bound
+枚舉數據區間。
+反覆地切割與驗證每個區間，以樹狀進行延伸，逐步將區間變得細緻，最後找出想要的數據。
+
+State Space Search
+枚舉所有的狀態，並依照衍生關係整理成樹狀圖或者網狀圖，在圖上搜尋。
+</pre>
+
+</div><p class="b" id="a7"><span class="en"> Direct Method / Trial and Error </span></p><div class="c">
+<p class="t"><span class="en"> Direct Method ( Straightforward Method ) </span></p>
+<p>「直接法」，可以直接算出答案來的問題，例如導個公式算出答案、觀察得到答案、依照流程進行最後得到答案、直接印出答案，這些都算是「直接法」。</p>
+<p>直接法口語化的用詞叫做「硬幹」、「硬做」，不太文雅就是了。</p>
+<p class="e"><span class="en"> UVa <a href="http://uva.onlinejudge.org/external/4/488.html">488</a> <a href="http://uva.onlinejudge.org/external/100/10055.html">10055</a> <a href="http://uva.onlinejudge.org/external/103/10370.html">10370</a> <a href="http://uva.onlinejudge.org/external/108/10878.html">10878</a> <a href="http://uva.onlinejudge.org/external/109/10929.html">10929</a> </span></p>
+<p class="t"><span class="en"> Trial and Error </span></p>
+<p>「嘗試錯誤法」、「試誤法」，是一種針對答案來進行<span class="en"> Enumerate </span>與<span class="en"> Search </span>的策略。有些困難的問題，難以直接推導答案，既然推導不出來，就慢慢測試答案、慢慢驗算吧──確立答案的範圍，枚舉所有可能的答案，再從中搜尋正確答案。</p>
+<img src="./first_program_files/TrialAndError2.png">
+<p>試誤法注重的是題目的限制條件，以及答案的數值範圍，這兩者直接影響到空間複雜度與時間複雜度。問題的限制越嚴苛，答案的數值範圍越小，那麼試誤法就會越簡單越快。</p>
+<img src="./first_program_files/TrialAndError1.png">
+<p>直接法和試誤法一陰一陽，互為正反。直接法是由題目本身下手，進而推導出答案；試誤法則是逆向思考，從答案來下手，進而迎合題目需求。</p>
+<p>大部分的問題，都無法直接製作出一個計算流程直接算出答案；一個問題，也不一定只有恰好一個答案，而有各式各樣的答案。這種情況下，可以採用試誤法來解決問題。</p>
+<p class="e"><span class="en"> UVa <a href="http://uva.onlinejudge.org/external/2/296.html">296</a> <a href="http://uva.onlinejudge.org/external/101/10167.html">10167</a> <a href="http://uva.onlinejudge.org/external/8/846.html">846</a> <a href="http://uva.onlinejudge.org/external/7/714.html">714</a> </span></p>
+<p class="t">延伸閱讀：<span class="en"> One-way Function </span></p>
+<p>「單向函數」是一種特別的函數，給定輸入很容易算出輸出，但是給定輸出卻很難算出輸入。</p>
+<p>舉例來說，令一個函數的輸入是兩個質數，輸出是兩個質數的乘積。給定兩個質數可以輕易的在多項式時間內算出乘積，然而給定兩質數的乘積卻需要指數時間才能完成質因數分解。</p>
+<p>如果給定一個單向函數的輸入，求其輸出，就適合用直接法，套用函數快速算得答案；如果給定一個單向函數的輸出，求其輸入，就適合用試誤法，嘗試各種輸入並套用函數快速驗證答案。</p>
+</div><script language="javascript" src="./first_program_files/h.js.下载"></script><div class="m"><div class="li"><a href="http://acm.nudt.edu.cn/~twcourse/index.html">回到首頁</a></div><div class="li"><a href="http://acm.nudt.edu.cn/~twcourse/EnumerateSearch.html#a1">Enumerate</a></div><div class="li"><a href="http://acm.nudt.edu.cn/~twcourse/EnumerateSearch.html#a3">Search</a></div><div class="li"><a href="http://acm.nudt.edu.cn/~twcourse/EnumerateSearch.html#a5">Exhaustive Search</a></div><div class="li"><a href="http://acm.nudt.edu.cn/~twcourse/EnumerateSearch.html#a7">Direct Method / Trial and Error</a></div></div>
+</body></html>
